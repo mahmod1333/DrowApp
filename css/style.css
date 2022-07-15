@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+background-color: #C5CEDD;
+
+}
+
+.Profile{
+    margin: 30px auto;
+    width:300px;
+    height:500px;
+    background: #161D3F;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    position: absolute;
+    margin: 30px 15.5cm;
+}
+#user{
+    width:200px;
+    height:40px;
+    background: linear-gradient(41deg, rgba(94,255,197,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 83%, rgba(94, 148, 255, 0.473) 91%);
+    border-radius: 10px;
+ font-weight: bold;
+    border: none;
+    color:#161D3F;
+
+}
+
+.Card{
+    width:370px;
+    height:300px;
+    background: linear-gradient(41deg, rgba(94,255,197,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 83%, rgba(255,255,255,1) 91%);
+    border-radius: 10px;
+   position: absolute;
+   
+}
+.Card #i{
+    color: #161D3F;
+    position: absolute;
+    margin:  20px 310px 0px ;
+    width:30px;
+    height:30px;
+    
+}
+.blue{
+    background-color: rgba(94, 148, 255, 0.212);
+    background: radial-gradient(circle, rgba(94, 148, 255, 0.473) 0%, rgba(255, 255, 255, 0) 60%);
+    width:200px;
+    height:200px;
+    position:absolute;
+    border-radius: 50px;
+margin:10px 180px;
+    
+
+}
+.userinfo{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    margin-top:20px;
+    margin-left:20px;
+}
+.userinfo img{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    border: 3px solid #fff;
+    box-shadow:0px 0px 1px #161D3F;
+}
+.userinfo .location{
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.userinfo  h2{
+    font-size:20px;
+    color:#161D3F;
+    margin-top:10px;
+}
+.userinfo .location p{
+    font-size:14px;
+    color:#161D3F;
+    margin-left:10px;
+}
+.userinfo .location i{
+    font-size:14px;
+    color:#161D3F;
+    margin: 10px 0px 10px;
+}
+.userinfo button{
+
+    padding:10px;
+    border-radius: 20px;
+    background-color: #161D3F;
+    color:white;
+    font-size:14px;
+    margin-top:10px;
+
+}
+
+
