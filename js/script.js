@@ -1,4 +1,4 @@
-const form = document.querySelector('.search');
+const form = document.querySelector('#search');
 
 const Profile = document.querySelector('.Profile');
 const api = 'https://api.github.com/users/' ;
@@ -11,26 +11,29 @@ function getdata(url) {
 const showdata = (data) => {
     data!== undefined? 
     Profile.innerHTML = `
-   <div class="Card">
+    <div class="Card">
 
-   <img id="i" src="img/download.png" alt="" class="equo">
-   <div class="blue"></div>
-   <div class="userinfo"> <img src="${data.avatar_url}">
-       <h2>
-           ${data.name}
-       </h2>
-       <div class="location">
-           <p>
-              ${data.bio} 
-           </p>
-       </div>
+    <img id="i" src="img/download.png" alt="" class="equo">
+    <div class="blue"></div>
+    <div class="userinfo"> <img src="${data.avatar_url}">
+        <h2>
+            ${data.name}
+        </h2>
+        <div class="location">
+            <p>
+               ${data.bio} 
+            </p>
+        </div>
+ <br/>
+ <br/>
 
-       <button>
-           view content
-       </button>
-   </div>
-   </div>
-    `:alert('not found');
+        <button>
+            view content
+        </button>
+    </div>
+    </div>
+</div>
+    ` :alert('not found');
 
 
 }
@@ -38,5 +41,6 @@ form .addEventListener('submit', (e) => {
     e.preventDefault();
     const user = document.querySelector('#user').value;
     getdata(api + user).then(data => showdata(data) );
+   
 }
 );
